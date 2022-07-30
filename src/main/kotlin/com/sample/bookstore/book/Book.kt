@@ -14,7 +14,5 @@ data class Book(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id:Long?=null
 ) {
-    fun toResponse():BookResponse {
-        return BookResponse(id,name,authorName,price)
-    }
+    fun toResponse() = BookResponse(id,name,authorName,price)
 }
