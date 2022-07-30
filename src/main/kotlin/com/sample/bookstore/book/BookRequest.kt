@@ -8,7 +8,5 @@ data class BookRequest (
     @Embedded
     val price: Money
 ) {
-    fun toBook(id:Long?=null): Book {
-        return Book(name,authorName,price,id)
-    }
+    fun toBook(id:Long?=null) = Book(name,authorName,price,id)
 }

@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 
 @Service
-class BookService @Autowired constructor(val bookRepository: BookRepository) {
+class BookService (@Autowired val bookRepository: BookRepository) {
     fun fetchAll(): List<Book> {
         return bookRepository.findAllByOrderByNameAsc()
     }

@@ -1,4 +1,3 @@
 package com.sample.bookstore.book
 
-class ResourceNotFoundException: Exception() {
-}
+class ResourceNotFoundException: Exception()
